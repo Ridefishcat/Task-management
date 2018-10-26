@@ -1,0 +1,29 @@
+
+.body{
+	margin: 0;
+	background-color: red;
+	background:url(images/topleft.png);
+	background-repeat: repeat;
+}
+.login{
+	width: 692px;
+	height: 373px;
+	margin: 150px auto;
+	position: relative;
+}
+.login form{
+	position: absolute;
+	right: 190px;
+	top: 100px;
+}
+.login div input{
+	height: 20px;
+	border: 1px solid grey;
+	font-size: 13px;
+	
+}
+
+.clearfix:before{
+    content: '..';
+    display:table;
+}

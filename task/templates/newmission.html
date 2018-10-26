@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+	<meta charset="utf-8">
+	<title>New_mission</title>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<div class="misson">
+	<fieldset >
+		<legend class="title">添加任务</legend>
+		<form  method="post">
+            {% csrf_token %}
+			<div>
+				<label>开始日期:<input type="date" name="startdate" /></label>
+			</div>
+			<br>
+			<div>
+				<label>终止日期:<input type="date" name="enddate"></label>
+			</div>
+	 		<br>
+ 			<div>
+	 			<label>
+	 			任务类型
+	 			<select name="category">
+	 				<option value="1">学习</option>
+	 				<option value="2">锻炼</option>
+	 				<option value="3">娱乐</option>
+	 			</select>
+	 			</label>
+	 		</div>
+	 		<br>
+	 		<div>
+	 			<label>任务级别</label>
+	 			<select name="priority">
+	 				<option value="1">1</option>
+	 				<option value="2">2</option>
+	 				<option value="3">3</option>
+	 			</select>
+	 		</div>
+	 		<br>
+	 		<div>
+	 			<label>任务跨度</label>
+	 			<select name="duration">
+	 				<option value="1">日任务</option>
+	 				<option value="2">周任务</option>
+	 				<option value="3">月任务</option>
+	 				<option value="4">年任务</option>
+	 			</select>
+	 		</div>
+	 		<br>
+	 		<div>
+	 			<label class="text">任务描述：</label>
+	 			<textarea name="content"></textarea>
+	 		</div> 
+			<br>
+			<input type="submit" name="" value="提交">
+			<input type="reset" name="" value="重置">
+		</form>
+	</fieldset>
+	</div>
+ {{ errmsg }} <!--显示错误信息 -->
+</body>
+</html>
+

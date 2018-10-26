@@ -1,0 +1,19 @@
+.misson{
+	margin: 100px auto 0;
+	background-color: grey;
+}
+
+.title{
+	font:20px/40px 'Microsoft Yahei';
+	color: #fff;	
+}
+
+textarea{
+	background-color: rgb(255,255,100);
+	height: 150px;
+	width: 400px;
+}
+
+body{
+	background-color: rgb(100, 100, 100);
+}
